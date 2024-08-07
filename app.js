@@ -54,7 +54,7 @@ const option = {
 app.post("/failure.html", (req, res) => {
   res.redirect("/");
 });
-app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
   console.log("server is running on port 3000");
 });
 
