@@ -32,6 +32,7 @@ app.post("/", (req, res) => {
 
   const url = "https://us13.api.mailchimp.com/3.0/lists/414a3b28bd";
   const request = https.request(url, option, function (response) {
+    console.log(__dirname);
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
     } else {
