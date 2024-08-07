@@ -32,7 +32,6 @@ app.post("/", (req, res) => {
 
   const url = "https://us13.api.mailchimp.com/3.0/lists/414a3b28bd";
   const request = https.request(url, option, function (response) {
-    console.log(__dirname);
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
     } else {
@@ -49,7 +48,7 @@ app.post("/", (req, res) => {
 
 const option = {
   method: "POST",
-  auth: "rohit:0076a8d1d0c0e9b762fe4e83ef2032da-us13",
+  auth: "rohit:e618524dd2264240e5930c555c43acc3-us13",
 };
 
 app.post("/failure.html", (req, res) => {
